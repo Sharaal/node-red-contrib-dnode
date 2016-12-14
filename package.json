@@ -1,0 +1,37 @@
+{
+  "name": "node-red-contrib-dnode",
+  "version": "1.0.0",
+  "description": "",
+  "license": "MIT",
+  "homepage": "http://github.com/dragonprojects/node-red-contrib-dnode",
+  "author": {
+    "name": "Sharaal",
+    "email": "developer@dragonprojects.de",
+    "url": "http://dragonprojects.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragonprojects/node-red-contrib-dnode.git"
+  },
+  "readmeFilename": "README.md",
+  "main": "build/DNode.js",
+  "scripts": {
+    "build": "babel src -d build",
+    "lint": "eslint src",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-strict-mode": "^6.18.0",
+    "eslint": "^3.10.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1"
+  },
+  "engines": {
+    "node": "^6.9.1"
+  }
+}
